@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosh_Token</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    
+    
+    
+
+</head>
+<body>
+    <style>
+
+        
+          /* @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateY(30px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    } */
+
+      /* Media Query for Larger Screens */
+      /* @media (min-width: 1024px) {
+                h1 {
+                    font-size: 8rem; 
+                }
+    
+                img {
+                    max-width: 600px;
+                }
+            }
+    
+        
+            @media (max-width: 1023px) and (min-width: 768px) {
+                h1 {
+                    font-size: 6rem; 
+                }
+    
+                img {
+                    max-width: 500px;  
+                }
+            }
+    
+          
+            @media (max-width: 767px) {
+                div {
+                    flex-direction: column; 
+                }
+    
+                h1 {
+                    font-size: 4rem; 
+                }
+    
+                img {
+                    max-width: 300px; 
+                    width: 90%; 
+                }
+            }
+            @media (max-width: 768px) {
+        .navbar-brand img {
+            width: 100px; 
+        }
+    } */
+
+
+    @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    
+       
+        @keyframes slideIn {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(0); }
+        }
+    
+        button:hover {
+            background-color: #fff;
+            color: #007BFF;
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); 
+        }
+    
+        @media (max-width: 768px) {
+            section div {
+                display: block;
+                text-align: center;
+            }
+    
+            section img {
+                width: 100%;
+                max-width: 100%; 
+                margin: 0 0 20px 0;
+            }
+    
+            section h2 {
+                font-size: 2rem;
+            }
+    
+            section p {
+                font-size: 1.2rem;
+            }
+    
+            button {
+                font-size: 1.2rem; 
+                padding: 12px 24px; 
+            }
+        }
+    
+       
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+             
+                div > div {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                h1 {
+                    font-size: 1.5rem;
+                    margin-bottom: 15px;
+                }
+                img {
+                    max-width: 90%; 
+                    margin-top: 15px;
+                }
+            }
+        
+            @media screen and (min-width: 769px) {
+              
+                h1 {
+                    font-size: 2.5rem;
+                }
+                img {
+                    max-width: 500px;
+                }
+            }
+
+            
+            @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    
+        @keyframes headerTextAnimation {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    
+        @keyframes fadeInList {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    
+        @keyframes listItemAnimation {
+            from {
+                transform: translateX(-10px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    
+       
+        @media (max-width: 1024px) {
+            section h2 {
+                font-size: 1.5rem;
+            }
+    
+            section ul {
+                font-size: 1rem;
+            }
+    
+            button {
+                padding: 8px 16px;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            section h2 {
+                font-size: 1.2rem;
+            }
+    
+            section ul {
+                font-size: 0.9rem;
+            }
+    
+            button {
+                padding: 8px 16px;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            section h2 {
+                font-size: 1rem;
+            }
+    
+            section ul {
+                font-size: 0.8rem;
+            }
+    
+            button {
+                font-size: 1rem;
+                padding: 6px 14px;
+            }
+        }
+            
+        .box-container {
+        margin-top: 30px; 
+    }
+
+    @media (min-width: 768px) {
+        .box-container {
+            margin-top: 10px; 
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .box-container {
+            margin-top: 5px;
+        }
+    }
+       
+
+   
+     @keyframes fadeIn {
+                        0% {
+                            opacity: 0;
+                            transform: scale(0.8);
+                        }
+                        100% {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                    }
+                
+                  
+                    @media (min-width: 768px) {
+                        .flex-container {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        }
+                
+                        .flex-item {
+                            flex: 1 1 50%; 
+                            padding: 15px;
+                            box-sizing: border-box;
+                            text-align: center;
+                        }
+                    }
+                
+                   
+                    @media (max-width: 767px) {
+                        .flex-container {
+                            display: block; 
+                        }
+                
+                        .flex-item {
+                            width: 100%;
+                            padding: 15px;
+                            box-sizing: border-box;
+                            text-align: center;
+                        }
+                    }
+    
+    </style>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: blue; position: fixed; top: 0; width: 100%; z-index: 1000;">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#" style="color: white;">
+                <img src="./IMG/COIN1.png" alt="Logo" style="max-width: 100%; height: auto; width: 120px;">
+            </a>
+
+            <!-- Toggler button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Navbar -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold" href="#whitepaper">White Paper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold" href="#tokenomics">Tokenomics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold" href="#howtobuy">How to Buy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold" href="#buynow">Buy Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold" href="#joinnow">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <section style="background-color: blue; padding: 20px; padding-top: 90px;">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center;">
+          
+            <h1 style="
+                color: gold; 
+                font-weight: bolder; 
+                font-size: 5rem; 
+                margin: 10px; 
+                flex: 1; 
+                min-width: 250px; 
+                text-align: center;">
+                KOSH <br> TOKEN
+            </h1>
+    
+            <img src="./IMG/SHOE1.png" alt="Shoe Image" style="
+                flex: 1; 
+                width: 100%; 
+                max-width: 500px; 
+                margin: 10px; 
+                min-width: 250px;">
+        </div>
+    </section>
+    <section>
+        <div style="background-color: goldenrod; overflow: hidden; white-space: nowrap;">
+            <marquee behavior="scroll" direction="left" scrollamount="8" style="font-size: 1rem; color: black; font-weight: bold;">
+                KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN *KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN *KOSH*COIN
+            </marquee>
+        </div>
+    </section>
+    <section>
+        <div style="background-color: blue; padding: 20px; display: flex; justify-content: center; align-items: center; text-align: center; animation: fadeIn 2s ease-in-out; flex-wrap: wrap; margin: 0;">
+            <img src="./IMG/ABOUTTT.png" alt="About Image" style="width: 100%; max-width: 400px; height: auto; margin: 20px; animation: slideIn 3s ease-in-out; ">
+    
+            <div style="color: white; margin: 20px; animation: fadeIn 2s ease-in-out; flex: 1; min-width: 300px;">
+                <h2 style="font-size: 3rem; font-weight: bold; margin-bottom: 10px;">ABOUT</h2>
+                <p  style="font-size: 1.5rem; line-height: 1.6; color: goldenrod;">
+                    Kosh is not just a token; it’s a movement that bridges the tangible and digital realms. With a robust deflationary mechanism, real-world utility, and integration into the crypto ecosystem, Kosh ensures a sustainable future for both investors and enthusiasts.
+                </p>
+                <a href="#" style="text-decoration: none;">
+                    <button id="movingElement" style="
+                        background-color: gold; 
+                        color: blue; 
+                        font-size: 1.5rem; 
+                        padding: 15px 30px; 
+                        border: none; 
+                        border-radius: 30px; 
+                        cursor: pointer;
+                        transition: background-color 0.3s ease, transform 0.3s ease;
+                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                        font-weight: bold;
+                        margin-top: 20px;">
+                        Buy Now
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+   
+        <section>
+            <div style="background-color: goldenrod; overflow: hidden; white-space: nowrap;">
+                <marquee behavior="scroll" direction="left" scrollamount="8" style="font-size: 1rem; color: black; font-weight: bold;">
+                    KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN *KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN *KOSH*COIN
+                </marquee>
+            </div>
+        </section>
+    
+    
+  
+    
+        <section id="whitepaper" style="background-color: blue; padding: 20px;">
+            <h1 style="color: goldenrod; text-align: center; font-weight: bolder;">KOSH WHITE PAPER</h1>
+            <div style="background-color: whitesmoke; padding: 40px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); margin: 0 auto; max-width: 1000px; border-radius: 10px;">
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; text-align: center; margin-bottom: 20px;">
+                    <h1 style="flex: 1; font-size: 2rem; color: black; margin-right: 20px; text-align: center; font-weight: bold;">Introduction</h1>
+                    <img src="./IMG/COIN1.png" alt="KOSH Coin" style="max-width: 100%; height: auto; flex: 1; max-width: 200px;">
+                </div>
+                <p style="font-size: 1.3rem; line-height: 1.6; color: blue; text-align: center; font-weight: bold;">
+                    In a rapidly evolving world where industries are being transformed by technology, KOSH seeks to redefine the relationship between brands and their customers. Traditional models of customer loyalty are often static, lacking personalization and interactive value. The advent of blockchain technology offers a unique opportunity to change this narrative.
+                    KOSH introduces a blockchain-based solution that enhances brand interaction while creating a unique tokenized ecosystem that adds real value for its users.
+                </p>
+            </div>
+        </section>
+        <section style="background-color: blue; padding: 20px;">
+            <!-- <h1 style="color: goldenrod; text-align: center; font-weight: bolder;">Mission</h1> -->
+            <div style="background-color: whitesmoke; padding: 40px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); margin: 0 auto; max-width: 1000px; border-radius: 10px;">
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; text-align: center; margin-bottom: 20px;">
+                    <h1 style="flex: 1; font-size: 2rem; color: black; margin-right: 20px; text-align: center; font-weight: bold;">Mission</h1>
+                </div>
+                <p style="font-size: 1.3rem; line-height: 1.6; color: blue; text-align: center; font-weight: bold;"> KOSH strives to provide footwear customers with an enhanced experience by integrating blockchain-backed transparency, rewards, and exclusive offerings. It aims to set a new standard in the footwear industry by prioritizing customer engagement and empowerment.
+                </p>
+                <img src="./IMG/COIN1.png" alt="KOSH Coin" style="max-width: 100%; height: auto; flex: 1; max-width: 200px;">
+            </div>
+        </section>
+        <section style="background-color: blue; padding: 20px;">
+            <!-- <h1 style="color: goldenrod; text-align: center; font-weight: bolder;">Mission</h1> -->
+            <div style="background-color: whitesmoke; padding: 40px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); margin: 0 auto; max-width: 1000px; border-radius: 10px;">
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; text-align: center; margin-bottom: 20px;">
+                    <h1 style="flex: 1; font-size: 2rem; color: black; margin-right: 20px; text-align: center; font-weight: bold;">Core principles</h1>
+                </div>
+                <p style="font-size: 1.3rem; line-height: 1.6; color: blue; text-align: center; font-weight: bold;">
+                    1. <b>Transparency:</b>
+                    KOSH ensures that all transactions and interactions within its ecosystem are trackable and verifiable on the Algorand blockchain, fostering trust and authenticity. 
+                </p>
+                <p style="font-size: 1.3rem; line-height: 1.6; color: blue; text-align: center; font-weight: bold;">
+                    2. <b>Inclusivity:</b>
+                    The KOSH platform is designed to be accessible to all, breaking down barriers to blockchain adoption through intuitive interfaces and simplified processes.
+                </p>
+                <p style="font-size: 1.3rem; line-height: 1.6; color: blue; text-align: center; font-weight: bold;">
+                    3. <b>Community-Centric:</b>
+                    KOSH believes in the power of community. By empowering users with rewards and ownership, KOSH aligns with the values of collaboration and mutual growth. 
+                </p>
+                <p style="font-size: 1.3rem; line-height: 1.6; color: blue; text-align: center; font-weight: bold;">
+                  <b>  4. Sustainability:</b>
+                    Leveraging the environmentally-friendly Algorand blockchain, KOSH ensures that its operations align with global sustainability goals.
+                </p>
+                <img src="./IMG/COIN1.png" alt="KOSH Coin" style="max-width: 100%; height: auto; flex: 1; max-width: 200px;">
+            </div>
+        </section>
+
+        <section style="background-color: blue; padding: 20px;">
+            <!-- <h1 style="color: goldenrod; text-align: center; font-weight: bolder;">Mission</h1> -->
+            <div style="background-color: goldenrod; padding: 40px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); margin: 0 auto; max-width: 1000px; border-radius: 10px;">
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; text-align: center; margin-bottom: 20px;">
+                    <h1 style="flex: 1; font-size: 2rem; color: blue; margin-right: 20px; text-align: center; font-weight: bold;">Use Cases</h1>
+                </div>
+                <p style="font-size: 1.3rem; line-height: 1.6; color: black; text-align: center; font-weight: bold;">
+               <b>     1. Exclusive Access:</b>
+                    KOSH token holders gain access to limited-edition footwear releases, exclusive events, and curated collections.
+                <p style="font-size: 1.3rem; line-height: 1.6; color: black; text-align: center; font-weight: bold;">
+                  <b>  2. Customer Loyalty:</b>
+                    Token rewards can be earned and redeemed for discounts, early access, and other brand perks.
+                </p>
+                <p style="font-size: 1.3rem; line-height: 1.6; color: black; text-align: center; font-weight: bold;">
+                <b>    3. Authenticity Verification:</b>
+                    Blockchain technology ensures that every KOSH product is traceable, safeguarding against counterfeit goods.
+                </p>
+                <p style="font-size: 1.3rem; line-height: 1.6; color: black; text-align: center; font-weight: bold;">
+                   <b> 4. Community Engagement:</b>
+                    Engage with the KOSH community through polls, design competitions, and collaborative campaigns where token holders influence brand decisions.
+                  
+                </p>
+                <img src="./IMG/COIN1.png" alt="KOSH Coin" style="max-width: 100%; height: auto; flex: 1; max-width: 200px;">
+            </div>
+        </section>
+
+        <section style="background-color: blue; padding: 20px; text-align: center;">
+            <h1 style="color: white; font-size: 2.5rem; margin-bottom: 20px; font-weight: bolder;">Technology Stack</h1>
+            <p style="font-size: 1.2rem; color: gold; line-height: 1.6; margin: 0 auto; max-width: 900px; text-align: center;">
+                <strong>Blockchain:</strong> Algorand
+                <br><br>
+                The choice of Algorand ensures scalability, speed, and sustainability while enabling seamless integration with the KOSH ecosystem.
+                <br><br>
+                <strong>Smart Contracts:</strong>
+                <br><br>
+                Smart contracts automate rewards, track loyalty points, and manage exclusive access with precision and efficiency.
+            </p>
+        </section>
+
+        <section style="background-color: blue; padding: 20px; text-align: center; margin-top: 10px;">
+            <h1 style="color: goldenrod; font-size: 2.5rem; margin-bottom: 20px; font-weight: bolder;">Conclusion</h1>
+            <p style="font-size: 1.2rem; color:white; line-height: 1.6; margin: 0 auto; max-width: 900px; text-align: center;">
+                KOSH represents a bold step into the future, combining the artistry of shoemaking with the limitless potential of blockchain technology. By delivering real-world utility and fostering a vibrant community, KOSH is set to redefine what it means to engage with a footwear brand in the digital age.
+            </p>
+        </section>
+        
+        <section>
+            <div style="background-color: white; overflow: hidden; white-space: nowrap;">
+                <marquee behavior="scroll" direction="left" scrollamount="8" style="font-size: 1rem; color: blue; font-weight: bold;">
+                    KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN *KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN *KOSH*COIN
+                </marquee>
+            </div>
+        </section>
+        <section id="tokenomics" style="background: blue; padding: 20px; width: 100%; box-sizing: border-box; display: flex; justify-content: center; align-items: center; min-height: 100vh; position: relative; animation: fadeIn 2s ease-out, slideUp 2s ease-out;">
+            <div style="color: white; max-width: 1000px; margin: auto; text-align: center; width: 100%; animation: fadeIn 2s ease-out, slideUp 2s ease-out;">
+                <h2 style="color: white; font-size: 2rem; margin-bottom: 20px; display: inline-flex; align-items: center; justify-content: center; animation: headerTextAnimation 2s ease-out;">
+                     TOKENOMICS <br> 
+                </h2>
+                
+                <ul style="list-style-type: none; padding-left: 0; margin-bottom: 20px; text-align: center; font-size: 1.2rem; opacity: 0; animation: fadeInList 3s ease-out forwards;">
+                    <li style="margin-bottom: 10px; font-weight: bold; animation: listItemAnimation 0.5s ease-out 0.5s forwards;">
+                        <i class="fas fa-check" style="color: aqua; margin-right: 8px;"></i> 5% Development
+                    </li>
+                    <li style="margin-bottom: 10px; font-weight: bold; animation: listItemAnimation 0.5s ease-out 0.6s forwards;">
+                        <i class="fas fa-check" style="color: aqua; margin-right: 8px;"></i> 20% vaulted for burn  <br> scheduleidity
+                    </li>
+                    <li style="margin-bottom: 10px; font-weight: bold; animation: listItemAnimation 0.5s ease-out 0.7s forwards;">
+                        <i class="fas fa-check" style="color: aqua; margin-right: 8px;"></i> 20% Staking/Farming
+                    </li>
+                    <li style="margin-bottom: 10px; font-weight: bold; animation: listItemAnimation 0.5s ease-out 0.8s forwards;">
+                        <i class="fas fa-check" style="color: aqua; margin-right: 8px;"></i> 10% partnership
+                    </li>
+                    <li style="margin-bottom: 10px; font-weight: bold; animation: listItemAnimation 0.5s ease-out 0.9s forwards;">
+                        <i class="fas fa-check" style="color: aqua; margin-right: 8px;"></i> 5% Team
+                    </li>
+                    <li style="margin-bottom: 10px; font-weight: bold; animation: listItemAnimation 0.5s ease-out 1s forwards;">
+                        <i class="fas fa-check" style="color: aqua; margin-right: 8px;"></i> 5% Airdrop
+                    </li>
+                    <li style="margin-bottom: 10px; font-weight: bold; animation: listItemAnimation 0.5s ease-out 1.1s forwards;">
+                        <i class="fas fa-check" style="color: aqua; margin-right: 8px;"></i> 5% First Burn
+                    </li>
+                    <li style="margin-bottom: 10px; font-weight: bold; animation: listItemAnimation 0.5s ease-out 1.2s forwards;">
+                        <i class="fas fa-check" style="color: aqua; margin-right: 8px;"></i> 17.5% Presale
+                    </li>
+                    <li style="margin-bottom: 10px; font-weight: bold; animation: listItemAnimation 0.5s ease-out 1.3s forwards;">
+                        <i class="fas fa-check" style="color: aqua; margin-right: 8px;"></i> 17.5% Liquidity
+                    </li>
+                </ul>
+                
+                <!-- <a href="./tokenmic.html" style="text-decoration: none;">
+                    <button style="background-color: rgb(84, 202, 223); color: black; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1.1rem; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                        Read More
+                    </button>
+                </a> -->
+            </div>
+        </section>
+
+        <section>
+            <div style="background-color: white; overflow: hidden; white-space: nowrap;">
+                <marquee behavior="scroll" direction="left" scrollamount="8" style="font-size: 1rem; color: blue; font-weight: bold;">
+                    KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN *KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN *KOSH*COIN
+                </marquee>
+            </div>
+        </section>
+ 
+
+    <section style="background-color: goldenrod;">
+        <!-- Tokenomics Summary Section -->
+        <div style="background-color: goldenrod; padding: 20px; text-align: center;">
+            <h1 style="margin: 0 0 10px 0; color: blue; font-weight: bold;">TOKENOMICS SUMMARY</h1>
+            <p style="margin: 0 0 20px 0; font-weight: bold; ">
+                The Kosh token has a total supply of 10,000 tokens, allocated as follows:
+            </p>
+
+            <div>
+               
+                <div class="box content-section" style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px;">
+                    <div style="flex: 1; min-width: 300px; background-color: blue; padding: 15px; border-radius: 10px; opacity: 1; transform: translateY(30px); transition: all 0.5s ease;" class="box">
+                   
+                        <p style="color: white;"><b>1. Liquidity (17.5%)</b> - 1,750,000 tokens</p>
+                        <p style="color: white;">Reserved to ensure smooth trading and provide price stability.</p>
+                    </div>
+                    <div class="box content-section" style="flex: 1; min-width: 300px; background-color: blue; padding: 15px; border-radius: 10px; opacity: 1; transform: translateY(30px); transition: all 0.5s ease;" class="box">
+                       
+                        <p style="color: white;"><b>2. Staking and Farming (20%)</b> - 2,000,000 tokens</p>
+                        <p style="color: white;">Encourages participation and promotes long-term holding.</p>
+                    </div>
+                </div>
+
+                
+                <div class="box content-section" style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px;">
+                    <div style="flex: 1; min-width: 300px; background-color: blue; padding: 15px; border-radius: 10px; opacity: 1; transform: translateY(30px); transition: all 0.5s ease;" class="box">
+                       
+                        <p style="color: white;"><b>3. Presale (17.5%)</b> - 1,750,000 tokens</p>
+                        <p style="color: white;">Offered during the presale to provide initial funding.</p>
+                    </div>
+                    <div class="box content-section" style="flex: 1; min-width: 300px; background-color: blue; padding: 15px; border-radius: 10px; opacity: 1; transform: translateY(30px); transition: all 0.5s ease;" class="box">
+                       
+                        <p style="color: white;"><b>4. Partnership (10%)</b> - 1,000,000 tokens</p>
+                        <p style="color: white;">Set aside for collaborations to expand the ecosystem.</p>
+                    </div>
+                </div>
+
+                
+                <div class="box content-section" style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px; background-color: blue; padding: 15px; border-radius: 10px; opacity: 1; transform: translateY(30px); transition: all 0.5s ease;" class="box">
+                        <!-- <strong>Box 5</strong> -->
+                        <p style="color: white;"><b>5. Development (5%)</b> - 500,000 tokens</p>
+                        <p style="color: white;">Dedicated to ongoing improvements, including the marketplace.</p>
+                    </div>
+                    <div class="box content-section" style="flex: 1; min-width: 300px; background-color: blue; padding: 15px; border-radius: 10px; opacity: 1; transform: translateY(30px); transition: all 0.5s ease;" class="box">
+                        <!-- <strong style="color: white;">Box 6</strong> -->
+                        <p style="color: white;"><b>6. Vaulted for Burn Schedule (20%)</b> - 2,000,000 tokens</p>
+                        <p style="color: white;">Locked for periodic burns to reduce the supply and increase value.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box content-section" style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 15px;">
+                <div style="flex: 1; min-width: 300px; background-color: blue; padding: 15px; border-radius: 10px; opacity: 1; transform: translateY(30px); transition: all 0.5s ease;" class="box">
+                    <!-- <strong>Box 5</strong> -->
+                    <p style="color: white;"><b>7. Airdrop (5%)</b> - 500,000 tokens</p>
+                    <p style="color: white;">
+                        Distributed to the community as free rewards to incentivize engagement and bring more users into the ecosystem..</p>
+                </div>
+                <div class="box content-section" style="flex: 1; min-width: 300px; background-color: blue; padding: 15px; border-radius: 10px; opacity: 1; transform: translateY(30px); transition: all 0.5s ease;" class="box">
+                    <!-- <strong style="color: white;">Box 6</strong> -->
+                    <p style="color: white;"><b>8. Team (5%) </b>- 500,000 tokens</p>
+                    <p style="color: white;">
+                        Allocated to the team as compensation for their efforts and commitment to the project. This aligns team interests with long-term growth.
+                         </p>
+                </div>
+            </div>
+        </div>
+            
+        <div style="display: flex; justify-content: center; align-items: center; min-height: 70vh; background-color: transparent;">
+            <div class="box-container" style="background-color: blue; padding: 15px; border-radius: 10px; text-align: center; max-width: 800px; width: 100%;">
+                <div style="background-color: white; padding: 30px; border-radius: 30px; text-align: center;">
+                    <p style="color: gold; background-color: transparent; font-size: 16px; line-height: 1.6; margin: 0;">
+                        <strong>Key Insights</strong><br><br>
+                        The largest portions are allocated to liquidity and staking/farming, highlighting the focus on market stability and ecosystem engagement.<br><br>
+                        A burn schedule (20% vaulted) ensures deflationary mechanics, potentially increasing value over time.<br><br>
+                        Presale and partnerships (10% each) ensure funding and strategic growth, while team allocation is modest at 5%, showcasing dedication to the project.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+ 
+    <section>
+        <div style="background-color: blue; overflow: hidden; white-space: nowrap;">
+            <marquee behavior="scroll" direction="left" scrollamount="8" style="font-size: 1rem; color:white; font-weight: bold;">
+                KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN *KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN*KOSH*COIN *KOSH*COIN
+            </marquee>
+        </div>
+        <section id="roadmap" style="background-color: goldenrod; padding: 20px; text-align: center;">
+            <h1 style="color: blue; margin-bottom: 20px;font-weight: bold;">ROADMAP</h1>
+            <h2 style="margin-bottom: 20px; font-weight: bold;">Phase 1 (December-January)</h2>
+            <div style="display: inline-block; padding: 20px; border-radius: 20px; background-color: white; box-shadow: 0px 4px 6px blue; text-align: left; max-width: 500px; margin: 0 auto;">
+                <p style="margin: 0; font-size: 16px; color: black; line-height: 1.6;">
+                    <strong>Token minting and launching</strong><br>
+                    Airdrop: Distribute tokens to initial supporters.
+                </p>
+            </div>
+            <div >
+                <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 20px; max-width: 100%; box-sizing: border-box; overflow: hidden;">
+                   
+                    <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                        <p style="font-size: 26px; color: #333; line-height: 1.6; font-weight: bold;">
+                            <strong>First Burn Schedule:</strong><br>
+                            Burn 5% of the allocated supply (500,000 Kosh) to create scarcity and boost value.
+                        </p>
+                    </div>
+                
+                  
+                    <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                        <img src="./IMG/Photoroom-20241204_134451.png" alt="Burn Schedule" style="max-width: 100%; height: auto; border-radius: 10px;">
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 10px; max-width: 100%; box-sizing: border-box; overflow: hidden;">
+                    
+                    <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 5px;  text-align: center; opacity: 0; transform: scale(0.8);">
+                        <img src="./IMG/Photoroom-20241204_162536.png" alt="Burn Schedule" style="max-width: 90%; height: auto; border-radius: 10px;">
+                    </div>
+                                
+                 
+                    <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                        <p style="font-size: 26px; color: #333; line-height: 1.6; font-weight: bold;">
+                            <b>Cometa Staking & LP Farming:</b> Introduce staking opportunities and liquidity pool farming to incentivize participation.
+                            Partnerships: Establish collaborations with growing and established projects.
+                        </p>
+                    </div>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 20px; max-width: 100%; box-sizing: border-box; overflow: hidden; ">
+                 
+                    <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                        <p style="font-size: 26px; color: #333; line-height: 1.6; font-weight: bold;">
+                            <b>Cometa Staking & LP Farming:</b> Introduce staking opportunities and liquidity pool farming to incentivize participation.
+                            Partnerships: Establish collaborations with growing and established projects.
+                        </p>
+                    </div>
+                
+               
+                    <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                        <img src="./IMG/Photoroom-20241204_161725.png" alt="Burn Schedule" style="max-width: 100%; height: auto; border-radius: 10px;">
+                    </div>
+                </div>
+                <!-- hhhh -->
+
+                <!-- <h1 style="color: blue; margin-bottom: 20px;font-weight: bold;">ROADMAP</h1> -->
+                <!-- <h2 style="margin-bottom: 20px; font-weight: bold;">Phase 1 (December-January)</h2> -->
+                <div style="display: inline-block; padding: 20px; border-radius: 20px; background-color: blue; box-shadow: 0px 4px 6px blue; text-align: left; max-width: 500px; margin: 0 auto;">
+                    <p style="margin: 0; font-size: 19px; color: white;font-weight: bold; line-height: 1.6;">
+                        <strong>Phase 2</strong><br>
+                        <!-- Airdrop: Distribute tokens to initial supporters. -->
+                    </p>
+                </div>
+                <div >
+                    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 20px; max-width: 100%; box-sizing: border-box; overflow: hidden;">
+                        
+                        <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                            <p style="font-size: 26px; color: #333; line-height: 1.6; font-weight: bold;">
+                                <b>Partnership Expansion:</b> Strengthen ties with more crypto projects and platforms.
+ 
+                            </p>
+                        </div>
+                    
+                      
+                        <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                            <img src="./IMG/Photoroom-20241204_161816.png" alt="Burn Schedule" style="max-width: 100%; height: auto; border-radius: 10px;">
+                        </div>
+                    </div>
+    
+                    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 10px; max-width: 100%; box-sizing: border-box; overflow: hidden;">
+                     
+                        <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 5px;  text-align: center; opacity: 0; transform: scale(0.8);">
+                            <img src="./IMG/Photoroom-20241204_161911.png" alt="Burn Schedule" style="max-width: 90%; height: auto; border-radius: 10px;">
+                        </div>
+                                    
+                     
+                        <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                            <p style="font-size: 26px; color: #333; line-height: 1.6; font-weight: bold;">
+                              <b>  Development Kosh Marketplace:</b> Enable Kosh to be used as the primary currency for purchases.
+ 
+                            </p>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap;  align-items: center;  justify-content: center; padding: 20px; max-width: 100%; box-sizing: border-box; overflow: hidden; ">
+                       
+                        <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                            <p style="font-size: 26px; color: #333; line-height: 1.6; font-weight: bold;">
+                               <b> Second Burn Event:</b> Conduct another burn to sustain deflationary momentum.
+                            </p>
+                        </div>
+                    
+                       
+                        <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                            <img src="./IMG/Photoroom-20241204_162024.png" alt="Burn Schedule" style="max-width: 100%; height: auto; border-radius: 10px;">
+                        </div>
+                    </div>
+                
+                    <!-- ssss -->
+                      <!-- <h1 style="color: blue; margin-bottom: 20px;font-weight: bold;">ROADMAP</h1> -->
+                <!-- <h2 style="margin-bottom: 20px; font-weight: bold;">Phase 1 (December-January)</h2> -->
+                <div style="display: inline-block; padding: 20px; border-radius: 20px; background-color: white; box-shadow: 0px 4px 6px blue; text-align: left; max-width: 500px; margin: 0 auto;">
+                    <p style="margin: 0; font-size: 19px; color: blue;font-weight: bold; line-height: 1.6;">
+                        <strong>Phase 3</strong><br>
+                        <!-- Airdrop: Distribute tokens to initial supporters. -->
+                    </p>
+                </div>
+                <div >
+                    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 20px; max-width: 100%; box-sizing: border-box; overflow: hidden;">
+                      
+                        <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                            <p style="font-size: 26px; color: #333; line-height: 1.6; font-weight: bold;">
+                                <b>Support for Growing Projects:</b> Provide resources and partnerships to emerging projects within the ecosystem.
+                            </p>
+                        </div>
+                    
+                     
+                        <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                            <img src="./IMG/Photoroom-20241204_162346.png" alt="Burn Schedule" style="max-width: 100%; height: auto; border-radius: 10px;">
+                        </div>
+                    </div>
+    
+                    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 10px; max-width: 100%; box-sizing: border-box; overflow: hidden;">
+                 
+                        <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 5px;  text-align: center; opacity: 0; transform: scale(0.8);">
+                            <img src="./IMG/Photoroom-20241204_162233.png" alt="Burn Schedule" style="max-width: 90%; height: auto; border-radius: 10px;">
+                        </div>
+                                    
+                        
+                        <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                            <p style="font-size: 26px; color: #333; line-height: 1.6; font-weight: bold;">
+                                Sustained Partnership Growth: Broaden the network of collaborations.
+ 
+                            </p>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap;  align-items: center;  justify-content: center; padding: 20px; max-width: 100%; box-sizing: border-box; overflow: hidden; ">
+                       
+                        <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                            <p style="font-size: 26px; color: #333; line-height: 1.6; font-weight: bold;">
+                              <b>  Annual Burn Schedule:</b> Continue burning tokens annually to enhance scarcity and value.
+                            </p>
+                        </div>
+                    
+                        
+                        <div class="scroll-fade-in" style="flex: 1 1 50%; padding: 15px; box-sizing: border-box; text-align: center; opacity: 0; transform: scale(0.8);">
+                            <img src="./IMG/Photoroom-20241204_133614.png" alt="Burn Schedule" style="max-width: 100%; height: auto; border-radius: 10px;">
+                        </div>
+                    </div>
+                
+               </section>
+
+               <section id="howtobuy" style="background-color: black; padding: 20px; text-align: center;">
+                <h2 style="color: white; font-weight: bold;">HOW TO BUY</h2>
+                <h1 style="color: goldenrod; margin: 10px 0;">KOSH COIN TOKEN</h1>
+                <p style="color: wheat; margin-bottom: 20px;">
+                    Ready to join the meme token? Buying meme token is simple! Click on the buy button, link your Pera or Defly wallet, and complete the purchase.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                    <div style="background-color: blue; color: white; flex: 1; min-width: 300px; max-width: 48%; padding: 20px; border-radius: 10px; animation: fadeInUp 1s ease;">
+                        <a href="#" style="text-decoration: none;">
+                            <button style=" font-weight: bold; padding: 10px 20px; background-color: yellow; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; box-shadow: 4px 7px 8px ;">
+                                Buy now
+                            </button>
+                        </a>
+                        <h2 style="margin: 20px 0; color: goldenrod; font-weight: bold;">CLICK ON THE BUY BUTTON</h2>
+                        <p>
+                            Ready to invest in the next big Brand token? Head to our "Buy Now" page and grab your share of the KOSH Coin revolution. Don’t miss the moon ride!
+                        </p>
+                    </div>
+                    <div style="background-color: blue; color: white; flex: 1; min-width: 300px; max-width: 48%; padding: 20px; border-radius: 10px; animation: fadeInUp 1.5s ease;">
+                        <h2 style="color: goldenrod;">CONNECT YOUR WALLET</h2>
+                        <p>
+                            Connect your wallet to join the KOSH Coin revolution! Seamlessly participate in the fun and wild ride of our community-driven token. Don’t miss out!
+                        </p>
+                    </div>
+                </div>
+
+
+                <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 15px;">
+                    <div style="background-color: blue; color: white; flex: 1; min-width: 300px; max-width: 48%; padding: 20px; border-radius: 10px; animation: fadeInUp 1s ease;">
+                        <a href="#" style="text-decoration: none;">
+                            <!-- <button style=" font-weight: bold; padding: 10px 20px; background-color: yellow; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; box-shadow: 4px 7px 8px ;">
+                                Buy now
+                            </button> -->
+                        </a>
+                        <h2 style="margin: 20px 0; color: goldenrod; font-weight: bold;">CHOOSE THE AMOUNT TO BUY</h2>
+                        <p>
+                           
+                            Choose the amount to buy and join the meme coin frenzy
+                        </p>
+                    </div>
+                    <div style="background-color: blue; color: white; flex: 1; min-width: 300px; max-width: 48%; padding: 20px; border-radius: 10px; animation: fadeInUp 1.5s ease;">
+                        <h2 style="color: goldenrod;">BUY KOSH COIN</h2>
+                        <p>
+                            CHOOSE THE AMOUNT TO BUY
+                            Buy KOSH Coin and join the meme revolution! Embrace the laughter, fun and potential gains.
+                             Secure your spot in the meme coin world.Hurry up!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <footer id="joinnow" style="
+            background-color:#001f3f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            margin-top: 50px;
+            animation: slideIn 1s ease-out;
+        ">
+            <div style="margin-bottom: 20px;">
+                <a href="" target="_blank" style="
+                    color: #fff;
+                    text-decoration: none;
+                    margin: 0 10px;
+                    font-size: 24px;
+                    transition: transform 0.3s ease, color 0.3s ease;
+                " onmouseover="this.style.color='#1da1f2'; this.style.transform='scale(1.2)';" 
+                   onmouseout="this.style.color='#fff'; this.style.transform='scale(1)';">
+                   <i class="fab fa-telegram" style="font-size: 24px;"></i>
+
+                </a>
+                <a href="https://x.com/kosh_019?t=bQZcgHEslW3CidyoYhFVGA&s=09" target="_blank" style="
+                    color: #fff;
+                    text-decoration: none;
+                    margin: 0 10px;
+                    font-size: 24px;
+                    transition: transform 0.3s ease, color 0.3s ease;
+                " onmouseover="this.style.color='#0088cc'; this.style.transform='scale(1.2)';" 
+                   onmouseout="this.style.color='#fff'; this.style.transform='scale(1)';">
+                    <i class="fab fa-twitter" style="font-size: 24px;"></i>
+                </a>
+                <!-- <a href="https://discord.com" target="_blank" style="
+                    color: #fff;
+                    text-decoration: none;
+                    margin: 0 10px;
+                    font-size: 24px;
+                    transition: transform 0.3s ease, color 0.3s ease;
+                " onmouseover="this.style.color='#5865f2'; this.style.transform='scale(1.2)';" 
+                   onmouseout="this.style.color='#fff'; this.style.transform='scale(1)';">
+                    <i class="fa fa-discord" style="font-size: 24px;"></i>
+                </a> -->
+            </div>
+            <div style="
+                font-size: 14px;
+                color: #FFD700;
+                margin-bottom: 10px;
+                animation: fadeIn 1.5s ease;
+            ">
+                © 2024 All Rights Reserved $KOSH COIN
+            </div>
+        </footer>
+
+</footer>
+
+
+
+            
+            
+            <style>
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            </style>
+            
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animation = 'fadeIn 1.5s ease-out forwards';
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, { threshold: 0.5 }); 
+
+ 
+    const elementsToAnimate = document.querySelectorAll('.scroll-fade-in');
+    elementsToAnimate.forEach(element => observer.observe(element));
+</script>
+</html>
